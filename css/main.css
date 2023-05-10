@@ -1,0 +1,362 @@
+/* line 1, ../../Users/samuf/Documents/Curso/NFT/scss/_reset.scss */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+/* line 12, ../../Users/samuf/Documents/Curso/NFT/scss/_reset.scss */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* line 17, ../../Users/samuf/Documents/Curso/NFT/scss/_reset.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 21, ../../Users/samuf/Documents/Curso/NFT/scss/_reset.scss */
+html,
+body {
+  background-color: var(--background);
+  overflow-x: hidden;
+}
+
+/* line 27, ../../Users/samuf/Documents/Curso/NFT/scss/_reset.scss */
+button {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* line 1, ../../Users/samuf/Documents/Curso/NFT/scss/_variables.scss */
+:root {
+  --background: #2B2B2B;
+  --background-secondary: #3B3B3B;
+  --caption-label-text: #858584;
+  --text: #FFFFFF;
+  --call-to-action: #A259FF;
+  --font-size-l: 2.2rem;
+  --font-size-m: 1.6rem;
+  --font-size-s: 1.2rem;
+  --font-size-xl: 2.8rem;
+  --font-size-xxl: 3.8rem;
+  --font-size-xxxl: 5.1rem;
+  --font-size-xxxxl: 6.7rem;
+  --font-family-space_mono: "Space Mono", Helvetica;
+  --font-family-work_sans: "Work Sans", Helvetica;
+}
+
+/* line 3, ../../Users/samuf/Documents/Curso/NFT/scss/_titles.scss */
+.worksans-normal-white-67 {
+  color: var(--text);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xxxxl);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%;
+}
+
+/* line 12, ../../Users/samuf/Documents/Curso/NFT/scss/_titles.scss */
+.worksans-normal-white-51 {
+  color: var(--text);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%;
+}
+
+/* line 21, ../../Users/samuf/Documents/Curso/NFT/scss/_titles.scss */
+.worksans-normal-white-38 {
+  color: var(--text);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+/* line 30, ../../Users/samuf/Documents/Curso/NFT/scss/_titles.scss */
+.worksans-normal-white-28 {
+  color: var(--text);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+/* line 39, ../../Users/samuf/Documents/Curso/NFT/scss/_titles.scss */
+.worksans-normal-white-22 {
+  color: var(--text);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+/* line 48, ../../Users/samuf/Documents/Curso/NFT/scss/_titles.scss */
+.worksans-normal-white-body {
+  color: var(--text);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+/* line 57, ../../Users/samuf/Documents/Curso/NFT/scss/_titles.scss */
+.worksans-normal-white-caption {
+  color: var(--text);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+}
+
+/* line 68, ../../Users/samuf/Documents/Curso/NFT/scss/_titles.scss */
+.spacemono-normal-white-67 {
+  color: var(--text);
+  font-family: var(--font-family-space_mono);
+  font-size: var(--font-size-xxxxl);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+}
+
+/* line 77, ../../Users/samuf/Documents/Curso/NFT/scss/_titles.scss */
+.spacemono-normal-white-51 {
+  color: var(--text);
+  font-family: var(--font-family-space_mono);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%;
+}
+
+/* line 86, ../../Users/samuf/Documents/Curso/NFT/scss/_titles.scss */
+.spacemono-normal-white-38 {
+  color: var(--text);
+  font-family: var(--font-family-space_mono);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+/* line 95, ../../Users/samuf/Documents/Curso/NFT/scss/_titles.scss */
+.spacemono-normal-white-28 {
+  color: var(--text);
+  font-family: var(--font-family-space_mono);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+/* line 104, ../../Users/samuf/Documents/Curso/NFT/scss/_titles.scss */
+.spacemono-normal-white-22 {
+  color: var(--text);
+  font-family: var(--font-family-space_mono);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+}
+
+/* line 113, ../../Users/samuf/Documents/Curso/NFT/scss/_titles.scss */
+.spacemono-normal-white-body {
+  color: var(--text);
+  font-family: var(--font-family-space_mono);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+/* line 122, ../../Users/samuf/Documents/Curso/NFT/scss/_titles.scss */
+.spacemono-normal-white-caption {
+  color: var(--text);
+  font-family: var(--font-family-space_mono);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+}
+
+/* Buttons */
+/* line 3, ../../Users/samuf/Documents/Curso/NFT/scss/_components.scss */
+.btn-primary,
+.btn-secondary,
+.btn-tertiary {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 0 5rem;
+  background-color: var(--call-to-action);
+  border-radius: 2rem;
+  font-family: var(--font-family-work_sans);
+  font-weight: 600;
+  text-align: center;
+  line-height: 140%;
+  text-transform: capitalize;
+  color: var(--text);
+  transition: all 0.3s ease;
+}
+
+/* line 20, ../../Users/samuf/Documents/Curso/NFT/scss/_components.scss */
+.btn-primary.outlined,
+.btn-secondary.outlined,
+.btn-tertiary.outlined {
+  border: 2px solid var(--call-to-action);
+  background-color: transparent;
+}
+
+/* line 25, ../../Users/samuf/Documents/Curso/NFT/scss/_components.scss */
+.btn-primary:hover,
+.btn-secondary:hover,
+.btn-tertiary:hover {
+  transform: scale(0.95);
+}
+
+/* line 30, ../../Users/samuf/Documents/Curso/NFT/scss/_components.scss */
+.btn-secondary,
+.btn-tertiary {
+  font-size: var(--font-size-m);
+}
+
+/* line 35, ../../Users/samuf/Documents/Curso/NFT/scss/_components.scss */
+.btn-primary {
+  height: 7.2rem;
+  font-size: var(--font-size-l);
+}
+
+/* line 40, ../../Users/samuf/Documents/Curso/NFT/scss/_components.scss */
+.btn-secondary {
+  height: 6rem;
+}
+
+/* line 44, ../../Users/samuf/Documents/Curso/NFT/scss/_components.scss */
+.btn-tertiary {
+  height: 4.6rem;
+}
+
+/* Avatar */
+/* line 50, ../../Users/samuf/Documents/Curso/NFT/scss/_components.scss */
+.avatar {
+  vertical-align: middle;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+}
+
+/* line 56, ../../Users/samuf/Documents/Curso/NFT/scss/_components.scss */
+.avatar.small {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+/* Card: Icons */
+/* line 64, ../../Users/samuf/Documents/Curso/NFT/scss/_components.scss */
+.card-icons {
+  width: 27.6rem;
+  height: 27.6rem;
+}
+
+/* Card: Highlighted */
+/* line 70, ../../Users/samuf/Documents/Curso/NFT/scss/_components.scss */
+.card-highlighted {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 51rem;
+}
+
+/* line 76, ../../Users/samuf/Documents/Curso/NFT/scss/_components.scss */
+.card-highlighted .card-image {
+  height: 40.1rem;
+}
+
+/* line 80, ../../Users/samuf/Documents/Curso/NFT/scss/_components.scss */
+.card-highlighted .info {
+  background-color: var(--background-secondary);
+  border-radius: 0 0 2rem 2rem;
+}
+
+/* line 84, ../../Users/samuf/Documents/Curso/NFT/scss/_components.scss */
+.card-highlighted .info .top {
+  width: 100%;
+  max-width: 47rem;
+  padding: 2rem;
+}
+
+/* line 90, ../../Users/samuf/Documents/Curso/NFT/scss/_components.scss */
+.card-highlighted .info .bottom {
+  display: flex;
+  gap: 1.2rem;
+  padding: 0 2rem 2.2rem 2rem;
+}
+
+/* Card: Artist */
+/* line 102, ../../Users/samuf/Documents/Curso/NFT/scss/_components.scss */
+.card-artist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 24rem;
+  padding: 2rem;
+  border-radius: 2rem;
+  background-color: var(--background-secondary);
+}
+
+/* line 110, ../../Users/samuf/Documents/Curso/NFT/scss/_components.scss */
+.card-artist .top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 2rem;
+}
+
+/* line 114, ../../Users/samuf/Documents/Curso/NFT/scss/_components.scss */
+.card-artist .top .artist-ranking {
+  background-color: var(--background);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 2rem;
+  padding: 4px 10px;
+  position: absolute;
+  left: 20px;
+}
+
+/* line 126, ../../Users/samuf/Documents/Curso/NFT/scss/_components.scss */
+.card-artist .bottom .artist-name {
+  width: 100%;
+  max-width: 20rem;
+  text-align: center;
+}
+
+/* line 132, ../../Users/samuf/Documents/Curso/NFT/scss/_components.scss */
+.card-artist .bottom .sales {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* line 136, ../../Users/samuf/Documents/Curso/NFT/scss/_components.scss */
+.card-artist .bottom .sales p {
+  color: var(--caption-label-text);
+}
+
+/*# sourceMappingURL=main.css.map */
