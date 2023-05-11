@@ -53,10 +53,16 @@
     height: 12rem;
     border-radius: 50%;
 
+    &.medium {
+        width: 6rem;
+        height: 6rem;
+    }
+
     &.small {
         width: 2.4rem;
         height: 2.4rem;
     }
+
 }
 
 /* Card: Icons */
@@ -110,15 +116,16 @@
     .top {
         @include flex(column, flex-start, flex-start);
         margin-bottom: 2rem;
+        position: relative;
 
         .artist-ranking {
             background-color: var(--background);
             width: 3rem;
             height: 3rem;
             border-radius: 2rem;
-            padding: 4px 10px;
+            padding: 0.4rem 1rem;
             position: absolute;
-            left: 20px;
+            left: -4rem;
         }
     }
 
@@ -136,6 +143,280 @@
             p {
                 color: var(--caption-label-text);
             }
+        }
+    }
+
+    &.horizontal.big {
+        @include flex(row, center, center);
+        height: 10rem;
+        max-width: fit-content;
+
+        .left {
+            position: relative;
+
+            .artist-ranking {
+                background-color: var(--background);
+                width: 3rem;
+                height: 3rem;
+                border-radius: 2rem;
+                padding: 4px 10px;
+                position: absolute;
+                left: -1.2rem;
+                top: -1.3rem;
+            }
+        }
+
+        .right {
+            margin-left: 2rem;
+
+            .sales {
+                @include flex(row, center, center);
+                gap: 10px;
+
+                p {
+                    color: var(--caption-label-text);
+                }
+            }
+        }
+    }
+
+    &.horizontal.medium {
+        @include flex(row, center, center);
+        height: 7.1rem;
+        max-width: fit-content;
+
+        .left {
+
+            .artist-ranking {
+                background-color: var(--background);
+                width: 3rem;
+                height: 3rem;
+                border-radius: 2rem;
+                padding: 4px 10px;
+                position: absolute;
+                left: 12px;
+                top: 13px;
+            }
+        }
+
+        .right {
+            margin-left: 2rem;
+
+            .sales {
+                @include flex(row, center, center);
+                gap: 10px;
+
+                p {
+                    color: var(--caption-label-text);
+                }
+            }
+        }
+    }
+
+    &.horizontal.small {
+        @include flex(row, center, center);
+        height: 6.4rem;
+        max-width: fit-content;
+
+        .left {
+
+            .artist-ranking {
+                background-color: var(--background);
+                width: 3rem;
+                height: 3rem;
+                border-radius: 2rem;
+                padding: 4px 10px;
+                position: absolute;
+                left: 12px;
+                top: 13px;
+            }
+        }
+
+        .right {
+            margin-left: 2rem;
+
+            .sales {
+                @include flex(row, center, center);
+                gap: 10px;
+
+                p {
+                    color: var(--caption-label-text);
+                }
+            }
+        }
+    }
+}
+
+/* Card: Category */
+.card-category {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 24rem;
+
+    .card-image {
+        border-radius: 2rem 2rem 0 0;
+        width: 100%;
+        max-width: 24rem;
+    }
+
+    .info {
+        padding: 2rem 3rem 2rem 3rem;
+        background-color: var(--background-secondary);
+        border-radius: 0 0 2rem 2rem;
+    }
+
+    &.small {
+        width: 100%;
+        max-width: 14.2rem;
+
+        .info {
+            padding: 2rem;
+        }
+    }
+
+
+}
+
+/* Card: NFT */
+.card-nft {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: fit-content;
+
+    .card-image {
+        width: 100%;
+        max-width: 330px;
+    }
+
+    .info {
+        background-color: var(--background-secondary);
+        border-radius: 0 0 2rem 2rem;
+        padding: 2rem 3rem 2.5rem 3rem;
+
+        .top {
+            width: 100%;
+            max-width: 47rem;
+
+            .artist {
+                display: flex;
+                margin-top: 5px;
+                gap: 1.2rem;
+            }
+        }
+
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2.5rem;
+        }
+    }
+
+    &.small {
+        max-width: 23.8rem;
+
+        .info {
+            padding: 2rem 2rem 2.5rem 2rem;
+        }
+    }
+}
+
+/* Card: Info */
+.card-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 33rem;
+    background-color: var(--background-secondary);
+    border-radius: 2rem;
+
+    .card-image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info {
+        padding: 0 30px 30px 30px;
+        text-align: center;
+
+        p {
+            margin-top: 1rem;
+        }
+    }
+
+    &.small {
+        max-width: 19.8rem;
+
+        .card-image {
+            width: 100%;
+            max-width: 16rem;
+            margin-top: 3rem;
+            align-self: center;
+        }
+
+        .info {
+            padding: 2rem 2rem 2.5rem 2rem;
+
+            p {
+                margin-top: 1rem;
+            }
+        }
+    }
+
+    &.horizontal {
+        max-width: 31.5rem;
+        flex-direction: row;
+        height: fit-content;
+
+        .card-image {
+            justify-content: center;
+            width: 100%;
+            max-width: 10rem;
+            margin-left: 20px;
+        }
+
+        .info {
+            text-align: left;
+            padding: 2rem;
+
+        }
+    }
+}
+
+/* Card: Collection */
+.card-collection {
+    display: flex;
+    flex-direction: column;
+    max-width: 33rem;
+    background-color: var(--background-secondary);
+    border-radius: 2rem;
+
+    .additional-nft {
+        ul {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 1.6rem;
+
+            li {
+                &.counter {
+                    border-radius: 2rem;
+                    background-color: var(--call-to-action);
+                    padding: 3.2rem 1.6rem 3.2rem 1.6rem;
+                }
+            }
+        }
+    }
+
+    .info {
+        word-break: break-all;
+        padding: 1.6rem 2rem 1.6rem 2rem;
+
+        .artist {
+            display: flex;
+            gap: 1.2rem;
+            margin-top: 8px;
         }
     }
 }
